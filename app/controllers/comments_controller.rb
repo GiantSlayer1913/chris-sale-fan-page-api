@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CommentsController < ApplicationController
   before_action :set_comment, except: %i[new edit]
 
@@ -39,13 +41,16 @@ class CommentsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_comment
-      @comment = Comment.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def comment_params
-      params.require(:comment).permit(:text, :user_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+
+  def set_comment
+    @comment = Comment.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+
+  def comment_params
+    params.require(:comment).permit(:text, :user_id)
+  end
 end
