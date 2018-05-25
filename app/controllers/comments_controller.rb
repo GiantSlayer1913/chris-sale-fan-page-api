@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CommentsController < ApplicationController
+class CommentsController < ProtectedController
   before_action :set_comment, except: %i[new edit]
 
   # GET /comments
