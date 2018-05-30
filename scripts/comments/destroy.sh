@@ -1,9 +1,6 @@
 #!/bin/bash
 
-API="http://localhost:4741"
-URL_PATH="/comments"
-
-curl "${API}${URL_PATH}/${ID}" \
+curl "http://localhost:4741/comments/${ID}" \
   --include \
   --request DELETE \
   --header "Authorization: Token token=${TOKEN}"
