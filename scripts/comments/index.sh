@@ -6,6 +6,6 @@ URL_PATH="/comments"
 curl "${API}${URL_PATH}" \
   --include \
   --request GET \
-  --header "Authorization: Bearer ${TOKEN}"
+  --header "Authorization: Token token=${TOKEN}"
 
 echo
