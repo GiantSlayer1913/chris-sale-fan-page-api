@@ -1,51 +1,30 @@
-Rails[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+Welcome to Chris Sale Fan Page Api ReadMe:
 
-# rails-api-template
-
-A template for starting projects with `rails-api`. Includes authentication.
-
-At the beginning of each cohort, update the versions in [`Gemfile`](Gemfile).
-
-## Prerequisites
-
--   [rails-api-examples-walkthrough](https://git.generalassemb.ly/ga-wdi-boston/rails-api-examples-walkthrough)
-
-## Dependencies
-
-Install with `bundle install`.
-
--   [`rails-api`](https://github.com/rails-api/rails-api)
--   [`rails`](https://github.com/rails/rails)
--   [`active_model_serializers`](https://github.com/rails-api/active_model_serializers)
--   [`ruby`](https://www.ruby-lang.org/en/)
--   [`postgres`](http://www.postgresql.org)
-
-## Installation
-
-### Download Template:
-1.  [Download](../../archive/master.zip) this template.
-1.  Unzip and rename the template directory (`unzip ~/Downloads/rails-api-template-master.zip`)
-1.  Move into the new project and `git init`.
+Client repository: https://github.com/GiantSlayer1913/chris-sale-fan-page-client
+Backend repository: https://github.com/GiantSlayer1913/chris-sale-fan-page-api
+Deployed site: https://giantslayer1913.github.io/chris-sale-fan-page-client/#
 
 ### Customize Template:
 1.  Empty [`README.md`](README.md) and fill with your own content.
-1.  Rename your app module in `config/application.rb` (change
-    `RailsApiTemplate`).
-1.  Rename your project database in `config/database.yml` (change
-    `'rails-api-template'`).
+2.  Rename your app module in `config/application.rb` (change
+    `ChrisSaleFanPageApi`).
+3.  Rename your project database in `config/database.yml` (change
+    `'chris-sale-fan-page-api'`).
 
 ### Setup Environment:
 1.  Install dependencies with `bundle install`.
-1.  `git add` and `git commit` your changes.
-1.  Create a `.env` for sensitive settings (`touch .env`).
-1.  Generate new `development` and `test` secrets (`bundle exec rails secret`).
-1.  Store them in `.env` with keys `SECRET_KEY_BASE_<DEVELOPMENT|TEST>`
+2.  `git add` and `git commit` your changes.
+3.  Generate new `development` and `test` secrets (`bundle exec rails secret`).
+4.  Store them in `.env` with keys `SECRET_KEY_BASE_<DEVELOPMENT|TEST>`
     respectively.
-1.  In order to make requests to your deployed API, you will need to set
+5.  In order to make requests to your deployed API, you will need to set
     `SECRET_KEY_BASE` in the environment of the production API (for example, using `heroku config:set` or the Heroku dashboard).
-1.  In order to make requests from your deployed client application, you will
+6.  In order to make requests from your deployed client application, you will
     need to set `CLIENT_ORIGIN` in the environment of the production API (for example, `heroku config:set CLIENT_ORIGIN=https://<github-username>.github.io`).
     See more about deploying to heroku [rails-heroku-setup-guide](https://git.generalassemb.ly/ga-wdi-boston/rails-heroku-setup-guide)
+
+To view ERD: /imgs/ERD.jpg
+To view Wireframe: /imgs/Wireframe.jpg
 
 ### Setup your database:
     - bin/rails db:drop (if it already exists)
@@ -346,7 +325,3 @@ heroku run rails db:migrate db:seed db:examples
 - https://blog.codeship.com/building-a-json-api-with-rails-5/
 
 ## [License](LICENSE)
-
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
